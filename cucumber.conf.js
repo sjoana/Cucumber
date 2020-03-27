@@ -65,7 +65,7 @@ AfterAll(async () => {
                     reportSuiteAsScenarios: true,
                     screenshotsDirectory: 'screenshots/',
                     scenarioTimestamp: true,
-                    launchReport: true,
+                    launchReport: false,
                     metadata: {
                         'App Version': '0.3.2',
                         'Test Environment': 'POC'
