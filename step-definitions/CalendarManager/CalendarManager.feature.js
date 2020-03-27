@@ -13,16 +13,17 @@ Then(/^the go to the tab Calendar Manager$/, async () => {
     return await calendar.goToCalendarManager();
 });
 
-Then(/^I "([^"]*)" an event$/, async (option) => {
+Then(/^I ([^"]*) an ([^"]*)$/, async (operation, type ,data) => {
     const calendar = client.page.CalendarManagerPage();
+    //console.log(data.hashes());
 
-    switch (option) {
+    switch (operation) {
         case 'create':
-            return await calendar.createEvent([events.events[0]]);
+            return await calendar.createEvent([data.hashes()[0]]);
         case 'edit':
-            return await calendar.edit(events.events[0], 'event');
+            return await calendar.edit([data.hashes()[0]], type);
         case 'delete':
-            return await calendar.delete(events.events[0], 'event');
+            return await calendar.delete([data.hashes()[0]], type);
     }
 
 

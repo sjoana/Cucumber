@@ -1,23 +1,27 @@
-@calendar
-Feature: Calendar Manager
+  @calendar
+  Feature: Calendar Manager
 
-  @release
-  Scenario: Create Events
+    @release
+    Scenario: Create Events
 
-    Given I open GoContact page
-    Then the go to the tab Calendar Manager
-    And I "create" an event
+      Given I open GoContact page
+      Then the go to the tab Calendar Manager
+      And I create an event
+      |name           | description             | duration | color | start | end   | pre | post | concurrent |
+      | ATEvent_001   | ATEventDescription_001  | 30       | Pink  | 09:00 | 18:00 | 0   |0     |  true      |
 
-  @release
-  Scenario: Edit Events
+    Scenario: Edit Events
 
-    Given I open GoContact page
-    Then the go to the tab Calendar Manager
-    And I "edit" an event
+      Given I open GoContact page
+      Then the go to the tab Calendar Manager
+      And I edit an event
+        |Name           | Description             | Duration | Color | Start | End   | Pre | Post | Concurrent |
+        | ATEvent_001   | ATEventDescription_001  | 30       | Pink  | 09:00 | 18:00 | 0   |0     |  true      |
 
-  @release
-  Scenario: Delete Events
+    Scenario: Delete Events
 
-    Given I open GoContact page
-    Then the go to the tab Calendar Manager
-    And I "delete" an event
+      Given I open GoContact page
+      Then the go to the tab Calendar Manager
+      And I delete an event
+        |Name           | Description             | Duration | Color | Start | End   | Pre | Post | Concurrent |
+        | ATEvent_001   | ATEventDescription_001  | 30       | Pink  | 09:00 | 18:00 | 0   |0     |  true      |

@@ -63,10 +63,13 @@ AfterAll(async () => {
                     theme: 'bootstrap',
                     jsonFile: 'report/cucumber_report.json',
                     output: 'report/cucumber_report.html',
-                    reportSuiteAsScenarios: false,
+                    reportSuiteAsScenarios: true,
                     screenshotsDirectory: 'screenshots/',
                     scenarioTimestamp: true,
                     launchReport: false,
+                    ignoreBadJsonFile: true,
+                    noInlineScreenshots:true,
+                    storeScreenshots: true,
                     metadata: {
                         'App Version': '0.3.2',
                         'Test Environment': 'POC'
