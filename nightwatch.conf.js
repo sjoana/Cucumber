@@ -1,8 +1,8 @@
 const chromedriver = require('chromedriver');
 
 module.exports = {
-    src_folders : ["tests"], //tests is a folder in workspace which has the step definitions
-    page_objects_path: 'pageobject/', //page_objects folder where selectors are saved,
+    src_folders : ["tests"],
+    page_objects_path: 'pageobject/',
     silent: true,
     detailed_output : false,
     test_settings: {

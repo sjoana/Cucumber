@@ -1,13 +1,14 @@
 const myModule = require('./lib/SetupDatabaseData');
 const chalk = require('chalk');
-let tnl;
 const fs = require('fs');
 const path = require('path');
+
 const { setDefaultTimeout, After, AfterAll, BeforeAll, Before } = require('cucumber');
 const { createSession, closeSession, startWebDriver, stopWebDriver } = require('nightwatch-api');
 const reporter = require('cucumber-html-reporter');
 
 const attachedScreenshots = getScreenshots();
+let tnl;
 
 function getScreenshots() {
     try {
@@ -59,10 +60,10 @@ AfterAll(async () => {
             await myModule.closeTunnel(tnl);
             setTimeout(() => {
                 reporter.generate({
-                    theme: 'foundation',
+                    theme: 'bootstrap',
                     jsonFile: 'report/cucumber_report.json',
                     output: 'report/cucumber_report.html',
-                    reportSuiteAsScenarios: true,
+                    reportSuiteAsScenarios: false,
                     screenshotsDirectory: 'screenshots/',
                     scenarioTimestamp: true,
                     launchReport: false,
