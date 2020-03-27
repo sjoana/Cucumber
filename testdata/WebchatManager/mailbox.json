@@ -1,0 +1,13 @@
+{
+    "name": "ATMailbox_001",
+    "server": "smtp.gmail.com",
+    "port": 587,
+    "ssl": false,
+    "username": "ATUsername_001@xpto.com",
+    "password": "ATPassword",
+    "passwordConfirm": "ATPassword",
+    "senderName": "ATUsername_001",
+    "senderAddress": "ATUsername_001@xpto.com",
+    "replyTo": "ATUsername_001@xpto.com",
+    "newName": "ATMailbox_002"
+}

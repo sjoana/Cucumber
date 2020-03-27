@@ -1,0 +1,133 @@
+{
+  "scriptName" : "ATScriptName_001",
+  "defaultPage" : "default page",
+  "editedScriptName" :"ATScriptEditedName_001",
+  "pageName" :"Página 1",
+  "element": [
+    {
+      "name": "Do you prefer?",
+      "values": "Dog\nCat",
+      "rule": "Dog"
+    }
+  ],
+  "calendarScript": [
+    {
+      "name": "Calendários Script",
+      "elementName": "Calendários",
+      "maxBookings": 2
+    }
+  ],
+  "ticketScript": [
+    {
+      "title": "Optional Select",
+      "values": "Yes\nNo",
+      "required": false
+    },
+    {
+      "name": "Required Input Text",
+      "required": true
+    }
+  ],
+  "callbackScript": [
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "Global",
+      "date": "Agent chooses date",
+      "maximumScheduleLimit": 3,
+      "startHour": "09:00",
+      "endHour": "11:00",
+      "comment": "This allow to create a callback in a script"
+    },
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "Global",
+      "date": "Default date and time",
+      "specificTime": "13:00",
+      "numberOfDayAfterCall": 6,
+      "comment": "This allow to create a callback in a script"
+    },
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "Personal",
+      "date": "Agent chooses date",
+      "maximumScheduleLimit": 5,
+      "startHour": "09:00",
+      "endHour": "11:00",
+      "comment": "This allow to create a callback in a script"
+    },
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "Personal",
+      "date": "Default date and time",
+      "specificTime": "15:00",
+      "numberOfDayAfterCall": 15,
+      "comment": "This allow to create a callback in a script"
+    },
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "To another agent",
+      "date": "Agent chooses date",
+      "maximumScheduleLimit": 5,
+      "startHour": "10:00",
+      "endHour": "11:00",
+      "comment": "This allow to create a callback in a script"
+    },
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "To another agent",
+      "date": "Default date and time",
+      "specificTime": "17:30",
+      "numberOfDayAfterCall": 13,
+      "comment": "This allow to create a callback in a script"
+    },
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "To a campaign / queue",
+      "date": "Agent chooses date",
+      "maximumScheduleLimit": 19,
+      "startHour": "12:00",
+      "endHour": "18:00",
+      "comment": "This allow to create a callback in a script"
+    },
+    {
+      "title": "Create Callback in Script (Campaign)",
+      "type": "To a campaign / queue",
+      "date": "Default date and time",
+      "specificTime": "18:45",
+      "numberOfDayAfterCall": 60,
+      "comment": "This allow to create a callback in a script"
+    }
+  ],
+  "spanishNumbers": [
+    {
+      "title": "DNI Validation",
+      "validator": "DNI",
+      "invalidData": "1",
+      "validData": "74015164Z"
+    },
+    {
+      "title": "NIE Validation",
+      "validator": "NIE",
+      "invalidData": "1",
+      "validData": "Y6030824P"
+    },
+    {
+      "title": "CIF Validation",
+      "validator": "CIF",
+      "invalidData": "1",
+      "validData": "J31169493"
+    },
+    {
+      "title": "IBAN Validation",
+      "validator": "IBAN",
+      "invalidData": "1",
+      "validData": "ES6800495237072416493901"
+    },
+    {
+      "title": "CUPS",
+      "validator": "Ajax Validation",
+      "invalidData": "1",
+      "validData": "ES0210000000040225LZ"
+    }
+  ]
+}

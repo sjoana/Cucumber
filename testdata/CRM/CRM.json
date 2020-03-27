@@ -1,0 +1,15 @@
+{
+  "ContactName" : "test name",
+  "ContactEmail" : "email@test.test",
+  "txtContactName":"Maria José Rodrigues",
+  "txtContactEmail":"m.j.rodrigues@xpto.pt",
+  "phone1":"912345678",
+  "txtPhone8":"952874589",
+  "txtAddress":"Rua do Progresso Lote 15",
+  "txtPostalCode":"3810-600",
+  "txtCity":"Aveiro",
+  "txtCountry":"Portugal",
+  "txtPhone2":"369852147",
+  "txtPhone3":"789654321",
+  "erased":""
+}

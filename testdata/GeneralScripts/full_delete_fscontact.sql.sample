@@ -1,0 +1,60 @@
+SET session_replication_role = replica;
+
+create temporary table temp_script_params (type text);
+insert into temp_script_params values ('{{ DOMAIN }}');
+
+DO $do$
+DECLARE
+	tschema text;
+	tname text;
+	cname text;
+	vdomainuuid text;
+	_query text;
+BEGIN
+	select type from temp_script_params into vdomainuuid;
+	raise info 'The domain uuid is: %. 5s To DELETE ALL GoContact',vdomainuuid;
+	PERFORM pg_sleep(5);
+	FOR tschema, tname, cname IN  select columns.table_schema, columns.table_name, columns.column_name
+							from information_schema.columns
+							left JOIN (select table_schema, table_name from information_schema.views
+													where table_schema NOT IN ('pg_catalog', 'information_schema')) as views ON views.table_name = columns.table_name
+							where columns.table_schema in ('fscontact','fsdatabases','fssocialnetworks','fstickets','fswebchat','datadelta')
+							and columns.column_name in ('domain','domain_uuid') and views.table_name is null
+	LOOP
+        _query = format($$ DELETE FROM %I.%I where %I=%L $$, tschema, tname, cname, vdomainuuid);
+		BEGIN
+			EXECUTE _query;
+			RAISE NOTICE 'Success query=%', _query;
+		EXCEPTION WHEN OTHERS THEN
+			RAISE NOTICE 'Fail query=%', _query;
+		END;
+	END LOOP;
+END$do$;
+
+DO $do$
+DECLARE
+    tname text;
+BEGIN
+    FOR tname IN SELECT table_name
+								FROM information_schema.tables
+								WHERE table_schema = 'fsdatabases' and table_name not in (SELECT name FROM fsdatabases.table_assoc) and table_name!='table_assoc'
+    LOOP
+        EXECUTE format($$ DROP TABLE IF EXISTS fsdatabases.%I $$, tname);
+    END LOOP;
+END;
+$do$;
+
+DO $do$
+DECLARE
+    tname text;
+BEGIN
+    FOR tname IN SELECT table_name
+								FROM information_schema.tables
+								WHERE table_schema = 'fscontact' and table_name like 'temporary_db%'
+    LOOP
+        EXECUTE format($$ DROP TABLE IF EXISTS fscontact.%I $$, tname);
+    END LOOP;
+END;
+$do$;
+
+SET session_replication_role = DEFAULT;

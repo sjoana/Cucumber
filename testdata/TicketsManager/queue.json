@@ -1,0 +1,11 @@
+{
+  "queueName": "ATQueue_001",
+  "queueNameEdit": "ATQueue_002",
+  "sla": "ATSla001",
+  "agent": "ATUser001",
+  "alterQueueName": "ATUpdatedQueue001",
+  "alterSLA": "ATSla002",
+  "alterAgent": "ATUser002"
+}
+
+

@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Calendar Manager",
+    "line": 1,
+    "id": "calendar-manager",
+    "tags": [],
+    "uri": "features\\CalendarManager.feature",
+    "elements": [
+      {
+        "id": "calendar-manager;create-events",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Create Events",
+        "tags": [
+          {
+            "name": "@calendar",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open GoContact page",
+            "match": {
+              "location": "step-definitions\\CalendarManager.feature.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5722000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the go to the tab Calendar Manager",
+            "match": {
+              "location": "step-definitions\\CalendarManager.feature.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3965000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I create a new event",
+            "match": {
+              "location": "step-definitions\\CalendarManager.feature.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4341000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

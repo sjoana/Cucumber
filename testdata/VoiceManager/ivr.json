@@ -1,0 +1,29 @@
+{
+  "name": "ATIVR_001",
+  "extension": 96385,
+  "description": "This is an IVR for Automatic Tests",
+  "welcome_message": "general|hang-up.wav",
+  "timeout": "60",
+  "retries": "2",
+  "timeout_action": "Hangup Call",
+  "options": [
+    {
+      "digit": "0",
+      "action": "Hangup Call"
+    },
+    {
+      "digit": "9",
+      "action": "Play Message",
+      "target": "general|soft_warning.mp3"
+    }
+  ],
+  "timeout_action_edit": "Transfer to Extension/Existing IVR",
+  "timeout_action_target_edit": "IVR: ATIVR001",
+  "options_edit": [
+    {
+      "digit": "8",
+      "action": "Transfer to Queue",
+      "target": "ATInbound001"
+    }
+  ]
+}

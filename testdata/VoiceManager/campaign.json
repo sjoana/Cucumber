@@ -1,0 +1,30 @@
+{
+  "name": "ATCampaign_001",
+  "ddi": "300501602",
+  "outcomes": [
+    {
+      "name": "ATOutcome_001",
+      "att": ["Success"],
+      "group": "Call Sucessfull"
+    },
+    {
+      "name": "ATOutcome_002",
+      "att": ["Negative"],
+      "group": "Not Intrested"
+    }
+  ],
+  "recycles": [
+    {
+      "type": "No Answer",
+      "interval": "1d 0h 0m",
+      "max_tries": "1"
+    }
+    ],
+  "agents": "System Administrator",
+  "call_recording": "never",
+  "default_callback_type": "Personal",
+  "global_max_tries": 5,
+  "campaign_type": "Power Preview",
+  "max_percentage_drop": 5
+
+}

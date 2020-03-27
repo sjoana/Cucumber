@@ -1,0 +1,34 @@
+{
+  "name": "ATIVRCampaign_001",
+  "ddi": "300501602",
+  "schedule": "ATSla001",
+  "concurrent_calls": "45",
+  "max_call_age": "1 Day",
+  "max_call_age_recycle": "2 Weeks",
+  "call_delay": "15 Minutes",
+  "call_percentage": "85%",
+  "owners": "New Leads",
+  "outcome": "Press to IVR",
+  "recycles": [
+    {
+      "type": "Busy",
+      "interval": "1 Day",
+      "tries": "7"
+    },
+    {
+      "type": "No Answer",
+      "interval": "2 Weeks",
+      "tries": "10"
+    },
+    {
+      "type": "Network Failure",
+      "interval": "5 Minutes",
+      "tries": "3"
+    },
+    {
+      "type": "Protocol Failure",
+      "interval": "18 Hours",
+      "tries": "8"
+    }
+  ]
+}

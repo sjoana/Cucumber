@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "username": "ATUser_001",
+      "email": "atuser_001@test.pt",
+      "firstname": "ATUser_001",
+      "lastname": "ATUser_001",
+      "role": "Agent",
+      "profile": "Agent Access"
+    },
+    {
+      "username": "editUsername",
+      "email": "editEmail@test.pt",
+      "phone": 919191919,
+      "firstname": "editFirstName",
+      "lastname": "editLastName",
+      "role": "agent",
+      "profile": "Agent Access",
+      "password": "editPassword",
+      "country": "editCountry",
+      "city": "editCity",
+      "address": "editAddress",
+      "zipcode": "3810-000",
+      "group": "ATGroup002"
+    }
+  ]
+
+
+
+
+}

@@ -1,0 +1,37 @@
+{
+  "name": "ATInbound_001",
+  "actions": [
+    {
+      "action": "Message",
+      "target": "",
+      "time": "10s",
+      "digit": "",
+      "audio": "general|hang-up.wav",
+      "repeat": false
+    },
+    {
+      "action": "Press to Inbound Queue",
+      "target": "ATInbound001",
+      "time": "5s",
+      "digit": "8",
+      "audio": "general|new-call.wav",
+      "repeat": false
+    }
+  ],
+  "outcomes": [
+    {
+      "name": "ATOutcome_001",
+      "att": ["Success"],
+      "group": "Call Transfer"
+    },
+    {
+      "name": "ATOutcome_002",
+      "att": ["Negative"],
+      "group": "Billing"
+    }
+  ],
+  "agents": "System Administrator",
+  "queuePriority": 5,
+  "averageTalkTime": "3",
+  "afterHours": "Inbound Queue"
+}

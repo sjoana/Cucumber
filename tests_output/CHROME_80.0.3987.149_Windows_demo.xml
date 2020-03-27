@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="demo"
+    errors="0" failures="1" hostname="" id="" package="demo" skipped="0"
+    tests="2" time="9.597" timestamp="">
+  
+    <testcase name="step one: navigate to google" classname="demo" time="1.892" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="step two: click input" classname="demo" time="7.705" assertions="1">  <failure message="Testing if element [0;33m&lt;#main&gt;[0m contains text [0;33m&#39;Night Watch&#39;[0m in 5000ms - expected [0;32m&#34;contains text &#39;Night Watch&#39;&#34;[0m but got: [0;31m&#34;does not contain &#39;Night Watch&#39;&#34;[0m [0;90m(5461ms)[0m">    at Object.step two: click input (C:\Users\jsantos\PhpstormProjects\Cucumber\tests\demo.js:15:21)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+
+    
+      <failure message="    at Object.step two: click input (C:\Users\jsantos\PhpstormProjects\Cucumber\tests\demo.js:15:21)">    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+    </testcase>
+  
+
+  
+    <system-err>
+      [0;31m  TypeError: The &#34;from&#34; argument must be of type string. Received type undefined[0m
+[0;90m       at validateString (internal/validators.js:112:11)
+       at Object.relative (path.js:437:5)
+       at Object.&lt;anonymous&gt; (C:\Users\jsantos\PhpstormProjects\Cucumber\tests\google.feature.js:4:1)
+       at Module._compile (internal/modules/cjs/loader.js:959:30)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+       at Module.load (internal/modules/cjs/loader.js:815:32)
+       at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+       at Module.require (internal/modules/cjs/loader.js:852:19)
+       at require (internal/modules/cjs/helpers.js:74:18)[0m
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

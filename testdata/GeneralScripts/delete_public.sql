@@ -1,0 +1,13 @@
+--- DELETE CONTENT IN SCHEMA PUBLIC ---
+
+DELETE FROM public.v_domains WHERE domain_uuid='99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_ivr_menus WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_ivr_menu_options WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_outbound_prefixes WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_gateway_dids WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_gateways WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_extensions WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_domain_settings WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_dialplan_details WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM public.v_dialplans WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';
+DELETE FROM finesource.security_profiles WHERE domain_uuid = '99992222-3333-4444-5555-666677778888';

@@ -1,0 +1,4 @@
+DELETE FROM public.v_domains WHERE domain_name='tests.atdomain';
+
+INSERT INTO public.v_domains(domain_uuid, domain_name, domain_description)
+VALUES('{{ DOMAIN }}', 'tests.atdomain', 'Domain for Automatic Tests');

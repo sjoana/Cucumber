@@ -1,0 +1,20 @@
+{
+  "mailboxNameOutbound": "ATMailboxOutbound_001",
+  "searchMailboxNameOutbound": "ATMailboxOutbound001",
+  "alterMailboxNameOutbound": "ATMailboxUpdated001",
+  "searchMailboxNameInbound": "ATMailboxInbound001",
+  "mailboxNameInbound": "ATMailboxInbound_001",
+  "email": "qa@test.com",
+  "server": "qa",
+  "port": "123",
+  "username": "qa",
+  "pw": "123",
+  "pwAgain": "123",
+  "serverupdate": "updateqa",
+  "portupdate": "567",
+  "usernameupdate": "udpadteqa",
+  "pwupdate": "567",
+  "pwAgainupdate": "567"
+}
+
+

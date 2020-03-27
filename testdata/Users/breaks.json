@@ -1,0 +1,13 @@
+{
+  "breaks": [
+    {
+      "name": "ATGroupBreak_003",
+      "max_time": 60,
+      "start_time": "09:00:00",
+      "end_time": "17:00:00",
+      "billable": false,
+      "agent_permission": false,
+      "comments": false
+    }
+  ]
+}

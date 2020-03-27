@@ -1,0 +1,82 @@
+{
+  "events": [
+    {
+      "name": "ATEvent_001",
+      "description": "ATEventDescription_001",
+      "duration": 30,
+      "color": "Pink",
+      "start": "09:00",
+      "end": "18:00",
+      "pre": "0",
+      "post": "0",
+      "concurrent": true
+    },
+    {
+      "name": "ATEvent_002",
+      "description": "ATEventDescription_002",
+      "duration": 60,
+      "color": "Gold",
+      "start": "09:00",
+      "end": "12:00",
+      "pre": "0",
+      "post": "0",
+      "concurrent": false
+    },
+    {
+      "name": "ATEvent_003",
+      "description": "ATEventDescription_003",
+      "duration": 40,
+      "color": "Magenta",
+      "start": "09:00",
+      "end": "12:00",
+      "pre": "0",
+      "post": "0",
+      "concurrent": false
+    }
+  ],
+  "calendars": [
+    {
+      "name": "ATCalendar_001",
+      "ref": "ATEvent/001",
+      "start": "09:00",
+      "end": "20:00",
+      "events": ["ATEvent_001","ATEvent_002"]
+    },
+    {
+      "name": "ATCalendar_002",
+      "ref": "ATEvent/002",
+      "start": "09:00",
+      "end": "13:00",
+      "events": ["ATEvent_002", "ATEvent_003"]
+    },
+    {
+      "name": "ATCalendar_003",
+      "ref": "ATEvent/003",
+      "start": "09:00",
+      "end": "13:00",
+      "events": []
+    }
+  ],
+  "reservations": [
+    {
+      "hour": "12:00:00",
+      "description": "ATReservation_001",
+      "event": "ATEvent_001"
+    },
+    {
+      "hour": "10:00:00",
+      "description": "ATReservation_002",
+      "event": "ATEvent_002"
+    },
+    {
+      "hour": "13:00:00",
+      "description": "ATReservation_003",
+      "event": "ATEvent_001"
+    },
+    {
+      "hour": "11:00:00",
+      "description": "ATReservation_004",
+      "event": "ATEvent_002"
+    }
+  ]
+}

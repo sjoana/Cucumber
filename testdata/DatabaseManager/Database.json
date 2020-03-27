@@ -1,0 +1,6 @@
+{
+  "databaseName" : "ATDabaseInterface",
+  "contactName" :"Nome",
+  "firstPhone" :"Telemóvel",
+  "city" :"Cidade"
+}

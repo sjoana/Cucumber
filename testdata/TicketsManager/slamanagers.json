@@ -1,0 +1,77 @@
+{
+  "name": "QA_SLA_Template",
+  "hours": "002400",
+  "nameSql": "ATSla001",
+  "nameUpdated": "ATSla001Updated",
+  "hoursUpdated": "10100",
+  "exceptionDate": "2019-05-12",
+  "weekly": {
+    "monday": {
+      "name": "monday",
+      "id": "1",
+      "start": "8",
+      "end": "20"
+    },
+    "tuesday": {
+      "name": "tuesday",
+      "id": "2",
+      "start": "9",
+      "end": "18"
+    },
+    "wednesday": {
+      "name": "wednesday",
+      "id": "3",
+      "start": "10",
+      "end": "22"
+    },
+    "thursday": {
+      "name": "thursday",
+      "id": "4",
+      "start": "8",
+      "end": "16"
+    },
+    "friday": {
+      "name": "friday",
+      "id": "5",
+      "start": "8",
+      "end": "16"
+    }
+  },
+  "automaticDelivery": {
+    "monday": {
+      "name": "monday",
+      "id": "1",
+      "start": "8",
+      "end": "20"
+    },
+    "tuesday": {
+      "name": "tuesday",
+      "id": "2",
+      "start": "9",
+      "end": "18"
+    },
+    "wednesday": {
+      "name": "wednesday",
+      "id": "3",
+      "start": "10",
+      "end": "22"
+    },
+    "thursday": {
+      "name": "thursday",
+      "id": "4",
+      "start": "8",
+      "end": "16"
+    },
+    "friday": {
+      "name": "friday",
+      "id": "5",
+      "start": "8",
+      "end": "16"
+    }
+  },
+  "exceptionWork": {
+      "start": "8",
+      "end":"20"
+  }
+}
+

@@ -1,0 +1,11 @@
+{
+  "name" : "Novo email",
+  "nameSql" : "ATUser001",
+  "email" : "email@gmail.com",
+  "emailSql" : "ATUser001@gmail.com",
+  "nameEdit" : "Edited name",
+  "emailEdit" : "emailedited@gmail.com",
+  "groupName": "Group1",
+  "groupNameSql": "ATGroup001"
+}
+

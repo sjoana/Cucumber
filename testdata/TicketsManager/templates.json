@@ -1,0 +1,9 @@
+{
+  "templateName": "ATTemplate_001",
+  "templateNameSql": "ATTemplate001",
+  "alterTemplateName": "ATTemplateUpdate_001",
+  "templateBody": "QA-Body",
+  "alterTemplateBody": "QA-Body-Updated"
+}
+
+
