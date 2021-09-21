@@ -23,7 +23,7 @@
     "q": "^1.5.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
-    "ssh2": "^0.8.2",
+    "ssh2": "^1.4.0",
     "tunnel-ssh": "^4.1.4",
     "uuid": "^3.3.3",
     "uuid-by-string": "^2.1.0",
